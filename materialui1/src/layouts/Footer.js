@@ -4,7 +4,8 @@ import Tab from '@material-ui/core/Tab'
 class Footer extends Component{
     render(){
         return(
-            <Tabs 
+            <Paper>       
+                 <Tabs 
             value={0}
         indicatorColor="primary"
         textColor="primary"
@@ -16,6 +17,9 @@ class Footer extends Component{
                   
               
             </Tabs>
+
+            </Paper>
+
         );
     }
 }

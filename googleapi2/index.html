@@ -1,0 +1,47 @@
+<html lang="en">
+  <head>
+    <meta name="google-signin-client_id" content="YOUR_CLIENT_ID.apps.googleusercontent.com">
+    <script src="https://apis.google.com/js/platform.js" async defer></script>
+ 
+ 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <!-- Popper JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+ <script src="script.js"></script>
+
+
+
+<style>
+    .g-signin2{
+      margin-left:500px;
+      margin-top:200px;
+    }
+
+
+    .data{
+      display:none;
+    }
+    
+    </style>
+
+
+  </head>
+  <body>
+    <div class="g-signin2" data-onsuccess="onSignIn"></div>
+
+  <div class="data">
+    <p>Profile Details</p>
+    <img id="pic" class="img-circle" width="1400" height="100" />
+  <p>Email Address</p>
+  <p id="email" class="alert alert-danger"></p>
+  <button onclick="signOut()" class="btn btn-danger">Signout</button>
+  </div>
+    <script>
+      
+    </script>
+  </body>
+</html>

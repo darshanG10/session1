@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="shortcut icon" href="%PUBLIC_URL%/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <meta name="google-signin-client_id" content="1090767764773-v8i1adonkiavv9j6mi8cunvb6f4mtsma.apps.googleusercontent.com">
+    
+    <script>
+        function initGoogle() {
+          window.gapi.load('auth2', function() {
+             window.gapi.auth2.init({
+               client_id:
+                 'your-client-ID.apps.googleusercontent.com',
+             });
+         });
+
+         console.log("Loaded the gapi")
+       }
+     </script>
+    <script src="https://apis.google.com/js/platform.js" onload="initGoogle()"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+   
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+  
+    <title>React App</title>
+  </head>
+  <body>
+
+  
+<div class="g-signin2"  data-onsuccess="onSignIn"></div>
+<script type="text/javascript">
+function onSignIn(googleUser) {
+  var profile = googleUser.getBasicProfile();
+  console.log('ID: ' + profile.getId()); // Do not send to your backend! Use an ID token instead.
+  console.log('Name: ' + profile.getName());
+  console.log('Image URL: ' + profile.getImageUrl());
+  console.log('Email: ' + profile.getEmail()); // This is null if the 'email' scope is not present.
+}
+
+</script>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root"></div>
+   
+  </body>
+</html>
+

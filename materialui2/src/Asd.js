@@ -1,41 +1,12 @@
-
-import React,{Component,Fragment} from 'react';
-import Header from './layouts/Header'
-import Footer from './layouts/Footer'
-import Exercises from './layouts/Exercises'
-import {AppBar, Toolbar,Typography} from '@material-ui/core';
-
-class App extends Component{
-  
-render(){
-  
-  return(
-    <div>
-
-<Header/>
-<Exercises />
-
-<Footer/>
-
-</div>
-  );
-}
-}
-export default App;
-
-
-/*
-
-import React,{Component} from 'react';
+import React from 'react';
 import { createStyles, makeStyles, Theme } from '@material-ui/core/styles';
 import AppBar from '@material-ui/core/AppBar';
 import Toolbar from '@material-ui/core/Toolbar';
 import Typography from '@material-ui/core/Typography';
 import Button from '@material-ui/core/Button';
 import IconButton from '@material-ui/core/IconButton';
-import MenuIcon from '@material-ui/icons/Menu';
 
-const useStyles = makeStyles((theme: Theme) =>
+const useStyles = makeStyles((theme) =>
   createStyles({
     root: {
       flexGrow: 1,
@@ -44,25 +15,22 @@ const useStyles = makeStyles((theme: Theme) =>
       marginRight: theme.spacing(2),
     },
     title: {
-      flexGrow: 1,
+      flexGrow: 4,
     },
   }),
 );
-
-const classes = useStyles();
-
+var classes = useStyles();
 
 
-class App extends Component{
+class ButtonAppBar extends React.Component {
 
-render(){
-
+  render(){
+console.log("the Classes is : ", classes)
   return (
     <div className={classes.root}>
       <AppBar position="static">
         <Toolbar>
           <IconButton edge="start" className={classes.menuButton} color="inherit" aria-label="Menu">
-            <MenuIcon />
           </IconButton>
           <Typography variant="h6" className={classes.title}>
             News
@@ -75,5 +43,4 @@ render(){
 }
 }
 
-export default App;
-*/
+export default ButtonAppBar;

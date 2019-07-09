@@ -1,30 +1,21 @@
 import React ,{Component} from 'react';
-
+import {Paper,Grid} from '@material-ui/core';
 
 class Exercise extends Component{
     render(){
         return(
-            <div>
-               <p> Exercise
-                sdsddssfs
-                dfsf
-                sdfdf
-                fdsf
-                dsfdsf
-                dsfdsfdf
-                sdfsd
-                fdsf</p><p> Exercise
-                sdsddssfs
-                dfsf
-                sdfdf
-                fdsf
-                dsfdsf
-                dsfdsfdf
-                sdfsd
-                fdsf</p>
+          <Grid container>
+          <Grid item sm>
 
-            
-            </div>
+          <Paper style={{margin:2}}>dkaghjgkagkgaksg</Paper>
+
+          </Grid>
+          <Grid item sm>
+
+          <Paper style={{margin:2}}>dkaghjgkagkgaksg</Paper>
+
+          </Grid>
+          </Grid>
         );
     }
 }
