@@ -14,7 +14,6 @@ render(){
 
 <Header/>
 <Exercises />
-
 <Footer/>
 
 </div>

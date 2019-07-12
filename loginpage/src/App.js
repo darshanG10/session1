@@ -112,7 +112,7 @@ render(){
   <div><Route exact strict path="/" render={props => <Loginpage {...props} handleChange={this.handleChange} check = {this.check} uname ={this.state.creds.uname} pass={this.state.creds.pass} />}></Route></div>
 )}
 </Router>
-
+ 
 
 </div>
 );
